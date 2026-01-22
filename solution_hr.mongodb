@@ -9,13 +9,13 @@ name: "Alice Johnson",
 Department: "Management",
 Salary: 85,000,
 Position: "HR Manager",
-Experience: "10"
+Experience: 10
 })
 
 //task:2 Insert Multiple Employees
 
 db.employees.insertmany({
-(name:"Bob Smith",department:"IT",position:"Developer",Salary:"60,000", Exp: 4)
+(name:"Bob Smith",department:"IT",position:"Developer",Salary:60,000, Exp: 4)
 (name:"Charlie Brown",department:"IT",position:"Senior Developer",Salary: 72,000, Exp: 7)
 (name:"Diana Prince",department: "Marketing",position:"Intern",Salary: 45,000, Exp: 0)
 )}
