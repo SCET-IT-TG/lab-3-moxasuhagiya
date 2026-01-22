@@ -68,9 +68,12 @@ db.employees.replaceOne(
 //PART:4
 
 //task:1 Find all employees who belong to either the "Management" OR "Engineering" departments using the $in operator.
-db.employees.find(
-  { department: { $in: ["Management", "Engineering"] } }
-)
+db.employees.find({
+  $and: [
+    { department: { $in: ["Management", "Engineering"] } }
+  ]
+})
+
 
 //task:2 Find employees who meet both criteria:
 //Experience is greater than 5 years
